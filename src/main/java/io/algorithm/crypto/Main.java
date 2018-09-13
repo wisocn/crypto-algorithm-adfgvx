@@ -1,6 +1,6 @@
 package io.algorithm.crypto;
 
-import io.algorithm.crypto.chiper.Adfgvx;
+import io.algorithm.crypto.cipher.Adfgvx;
 import io.algorithm.crypto.logger.CustomLogFormat;
 
 import java.util.logging.Handler;
@@ -36,7 +36,7 @@ import java.util.logging.Logger;
 public class Main {
 
     /**
-     * Adfgvx instance of chiper
+     * Adfgvx instance of cipher
      */
     private static Adfgvx adfgvx = new Adfgvx();
 

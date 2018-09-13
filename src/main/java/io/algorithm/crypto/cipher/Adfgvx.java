@@ -1,12 +1,4 @@
-/*
- *	Adfgvx.java
- *
- *	17.10.2016
- *
- * Copyright 2014 SRC d.o.o., Trzaska cesta 116,
- * 1001 Ljubljana, Slovenia. All Rights Reserved.
- */
-package io.algorithm.crypto.chiper;
+package io.algorithm.crypto.cipher;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -26,7 +18,7 @@ public class Adfgvx {
     private static final Logger logger = Logger.getLogger(Adfgvx.class.getName());
 
     /**
-     * Columns for matrix for ADFGVX chiper
+     * Columns for matrix for ADFGVX cipher
      */
     private final char[] columns = {'A', 'D', 'F', 'G', 'V', 'X'};
 
@@ -43,7 +35,7 @@ public class Adfgvx {
     };
 
     /**
-     * Default chiper key.
+     * Default cipher key.
      */
     private char[] chiperKey = {'P', 'R', 'I', 'V', 'A', 'C', 'Y'};
 
@@ -138,7 +130,7 @@ public class Adfgvx {
     }
 
     /**
-     * Spliting chiper text into key length
+     * Spliting cipher text into key length
      * array which are grouped into matrix.
      *
      * @param chiperText contatinated string
@@ -180,10 +172,10 @@ public class Adfgvx {
     }
 
     /**
-     * Checks if chiper text is shorter than key length.
+     * Checks if cipher text is shorter than key length.
      *
      * @param chiperText chiperText
-     * @return If chiper text is shorter
+     * @return If cipher text is shorter
      * than key return true otherwise false.
      */
     private boolean isShorterThanChiperKey(String chiperText) {
