@@ -256,7 +256,6 @@ public class Adfgvx {
         }
 
         logger.fine(dechiperedTextBuilder.toString());
-        // dolzina kljucev horizontalno je vedno sodo število.
         StringBuilder dechiperedText = new StringBuilder();
         for (int i = 0; i < dechiperedTextBuilder.toString().length(); i += 2) {
             char[] crki = dechiperedTextBuilder.substring(i, i + 2).toCharArray();
